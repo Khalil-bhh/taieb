@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1180.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DisplayItemInventoryUI">
+    <children>
+        <BorderPane layoutX="464.0" layoutY="248.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <center>
+                <SplitPane prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="80.0" prefWidth="100.0">
+                            <children>
+                                <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false"  prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #0B9CE3; -fx-text-fill: white;" text="View item" AnchorPane.leftAnchor="14.0" />
+                                <Button layoutX="134.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #09B28C;" text="View cart" textFill="WHITE" />
+                                <Button alignment="CENTER" layoutX="254.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #FF3F3C; -fx-text-fill: white;" text="Checkout" />
+
+                                <TableView fx:id="itemTableView" layoutX="2.0" layoutY="55.0" prefHeight="533.0" prefWidth="822.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="55.0" >
+                                    <columns>
+                                        <TableColumn fx:id="itemTableColumnId" prefWidth="32.0" text="Id" style="-fx-text-fill: red"/>
+                                        <TableColumn fx:id="itemTableColumnName" prefWidth="107.0" text="Name" />
+                                        <TableColumn fx:id="itemTableColumnDescription" prefWidth="675.0" text="Description" />
+                                    </columns>
+                                </TableView>
+                            </children></AnchorPane>
+                    </items>
+                </SplitPane>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>
